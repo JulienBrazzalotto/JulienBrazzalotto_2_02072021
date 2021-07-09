@@ -117,6 +117,74 @@ h1 + p
     border: 1px #0065fc solid;
     color: white;
 }
+/*section*/
+
+#filtre
+{
+    display: flex;
+    align-items: baseline;
+}
+
+ul
+{
+    display: flex;
+    list-style: none;
+    color: #0065fc;
+}
+
+.fa-money-bill-wave
+{
+    font-size: 1.3em;
+    background-color: #DEEBFF;
+    padding: 13px 10px 13px 10px ;
+    border-radius: 200px;
+    margin-right: 5px;
+}
+
+.fa-child
+{
+    
+    font-size: 1.3em;
+    background-color: #DEEBFF;
+    padding: 13px 14px 13px 14px ;
+    border-radius: 200px;
+    margin-right: 5px;
+}
+
+.fa-heart
+{
+    
+    font-size: 1.3em;
+    background-color: #DEEBFF;
+    padding: 13px 12px 13px 12px ;
+    border-radius: 200px;
+    margin-right: 5px;
+}
+
+.fa-dog
+{
+    
+    font-size: 1.3em;
+    background-color: #DEEBFF;
+    padding: 13px 12px 13px 12px ;
+    border-radius: 200px;
+    margin-right: 5px;
+}
+
+.filtreli
+{
+    margin: 10px;
+    padding-right: 5px;
+    border: 2px #f2f2f2 solid;
+    border-radius: 200px;
+}
+
+.filtreli :hover
+{
+    cursor: pointer;
+    background-color: white;
+}
+
 
 
 /* info*/
@@ -147,7 +215,7 @@ h1 + p
 }
 
 
-/*section 1*/
+/*article*/
 
 main
 {
@@ -198,6 +266,7 @@ img
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 200px;
 }
 
 #marseille
@@ -265,13 +334,20 @@ h4
     text-decoration: none;
 }
 
-
+.star
+{
+    margin-bottom: 5px;
+}
 
 .fa-star
 {
     color: #0065fc;
 }
 
+.fa-star.grey
+{
+    color: #f2f2f2;
+}
 
 
 /*aside*/
@@ -302,7 +378,7 @@ aside
     display: flex;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border: 6px white solid;
     background-color: white;
     border-radius: 20px;
@@ -319,6 +395,11 @@ aside
 .populaire
 {
     margin-left: 5px;
+}
+
+.starpop
+{
+    margin-top: 30px;
 }
 
 /*section 2*/
@@ -345,7 +426,6 @@ aside
 {
     display: flex;
     flex-direction: column;
-    vertical-align: stretch;
     margin-right: 40px;
 }
 
@@ -469,7 +549,7 @@ h6
 
 /*footer*/
 
-#footer
+footer
 {
     display: flex;
     width: 1440px;
@@ -487,7 +567,7 @@ h6
     margin-left: 70px;
 }
 
-#Nos_hebergements
+#nos_hebergements
 {
     margin-left: 160px;
     margin-right: 160px;
@@ -497,9 +577,21 @@ h6
 #liste_a_propos
 {
     margin-top: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    vertical-align: baseline;
 }
 
-ul
+#liste_nos_hebergements
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    vertical-align: baseline;
+}
+
+#liste_assistance
 {
     list-style: none;
     display: flex;
@@ -510,4 +602,5 @@ ul
 a
 {
     text-decoration: none;
+    color: black;
 }
