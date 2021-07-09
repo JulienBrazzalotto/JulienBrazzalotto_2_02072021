@@ -428,17 +428,10 @@ aside
 
 #paquet
 {
-    display: flex;
+    display: flex; 
 }
 
-#paquet1
-{
-    display: flex;
-    margin-right: 40px;
-    margin-left: 0;
-}
-
-#paquet2
+.gr1
 {
     display: flex;
     flex-direction: column;
@@ -446,13 +439,21 @@ aside
     margin-left: 0;
 }
 
-#paquet3
+.gr2
+{
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 0;
+}
+
+.gr3
 {
     display: flex;
     margin-right: 40px;
     margin-left: 0;
 }
-#paquet4
+.gr4
 {
     display: flex;
     flex-direction: column;
@@ -476,7 +477,7 @@ figcaption
     margin-bottom: 10px;
 }
 
-.gr1
+#paquet1
 {
     width: 276px;
     height: auto;
@@ -485,9 +486,11 @@ figcaption
     box-shadow: 6px 6px 6px #f2f2f2;
     border-radius: 20px;
     text-decoration: none;
+    margin-right: 0;
+    margin-left: 0;
 }
 
-.gr2
+.paquet2
 {
     width: 276px;
     height: auto;
@@ -496,10 +499,12 @@ figcaption
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.gr3
+#paquet3
 {
     width: 276px;
     height: auto;
@@ -508,9 +513,11 @@ figcaption
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
 }
 
-.gr4
+#paquet4
 {
     width: 276px;
     height: auto;
@@ -519,10 +526,12 @@ figcaption
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
+    
+    margin-left: 0;
 }
 
-.gr5
+#paquet5
 {
     width: 276px;
     height: auto;
@@ -531,8 +540,9 @@ figcaption
     text-decoration: none;
     display: flex;
     flex-direction: column;
+  
+    margin-left: 0;
 }
-
 
 .phgrande
 {

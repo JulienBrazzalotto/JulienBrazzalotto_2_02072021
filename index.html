@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="style.css" />
 
         <!--icones-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         
         <!--police-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,10 +34,10 @@
                     </nav> 
                 </header>
 
-                <p>
+                <div>
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p id="sous_titre">En plein centre ville ou en pleine nature</p>
-                </p>
+                </div>
 
                 <form action="php">
                     <div id="localisation">
@@ -231,43 +231,52 @@
                     <section id="act">
                             <h5 id="Activités">Activités à Marseille</h5>
                             <div id="paquet">
-                                <figure id="paquet1">
-                                    <a href="#" class="gr1">
+                                <a href="#" class="gr1">
+                                    <figure id="paquet1">                                    
                                         <img class="phgrande" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux_Port">
                                         <figcaption>Vieux Port</figcaption>
-                                    </a>
-                                </figure>
-                                <figure id="paquet2">
-                                    <a href="#" class="gr2">
-                                        <img class="phpetite" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort_de_Pomègues">
-                                        <figcaption>Fort de Pomègues</figcaption>
-                                    </a>
-                                
-                                    <a href="#" class="gr3">
-                                        <img class="phtrespetite" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles_du_Frioul">
-                                        <figcaption>Îles du Frioul</figcaption>
-                                    </a>
-                                </figure>
+                                    </figure>  
+                                </a>
 
-                                <figure id="paquet3">
-                                    <a href="#" class="gr1">
+                                <div>
+                                    <a href="#" class="gr2">
+                                        <figure class="paquet2">
+                                            <img class="phpetite" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort_de_Pomègues">
+                                            <figcaption>Fort de Pomègues</figcaption>
+                                        </figure>   
+                                    </a>
+                                    
+                                    <a href="#" class="gr3">
+                                        <figure class="paquet2">
+                                            <img class="phtrespetite" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles_du_Frioul">
+                                            <figcaption>Îles du Frioul</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>                               
+                                    
+                                <a href="#" class="gr1">
+                                    <figure id="paquet3">   
                                         <img class="phgrande" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc_National_des_Calanques">
                                         <figcaption>Parc National des Calanques</figcaption>
-                                    </a>
-                                </figure>
-                                <figure id="paquet4">
-                                    <a href="#" class="gr4">                                
-                                        <img class="phmoyenne" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">                                    
-                                        <figcaption>Notre-Dame-de-la-Garde</figcaption>
+                                    </figure>
+                                </a>
+                                
+                                <div>
+                                    <a href="#" class="gr4">
+                                        <figure id="paquet4">                               
+                                            <img class="phmoyenne" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">                                    
+                                            <figcaption>Notre-Dame-de-la-Garde</figcaption>
+                                        </figure>
                                     </a>
 
                                     <a href="#" class="gr5">
-                                        <img class="phmoyenne" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc_Longchamp">
-                                        <figcaption>Parc Longchamp</figcaption>
+                                        <figure id="paquet5">    
+                                            <img class="phmoyenne" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc_Longchamp">
+                                            <figcaption>Parc Longchamp</figcaption>
+                                        </figure>                                    
                                     </a>
-                                </figure>
+                                </div>                                
                             </div>
-
                     </section>
             </div>    
 
@@ -298,7 +307,7 @@
                         <li><a href="#">Nous contacter</a></li>
                     </ul>
                 </div>
-            </div>
+            
         </footer>
                            
         </body>
