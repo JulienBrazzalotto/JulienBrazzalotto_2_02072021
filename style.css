@@ -7,7 +7,6 @@
 
 body
 {
-    border: 2px black solid;
     margin: 0px;
     font-family: 'Raleway', 'Times New Roman', Times, serif;
 }
@@ -22,7 +21,7 @@ h1, h2, h3, strong
     font-weight: bold;
 }
 
-body>*:not(footer)
+#bloc_page>*:not(footer)
 {
     width: 90%;
     margin:auto;
@@ -147,13 +146,14 @@ h1 + p
     display: flex;
     align-items: center;
     margin: 3vw 0 3vw 0;
+    
 }
 
 h2 + ul
 {
     display: flex;
     justify-content: space-around;
-    width: 50vw;
+    width: 60vw;
     list-style: none;
     color: #0065FC;
     flex-wrap: wrap;
@@ -179,7 +179,7 @@ h2 + ul
 
 .textefiltre
 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     padding-right: 15px;
     border-radius: 200px;
@@ -362,7 +362,7 @@ figure h3
 figure p
 {
     margin-top: 0px;
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
 }
 
 
@@ -380,7 +380,7 @@ figure h3, figure p
 
 #activites
 {
-    margin: 4vw auto;
+    margin: 20px auto;
 }
 
 #paquet
@@ -484,4 +484,7 @@ footer ul
     flex-direction: column;
     list-style: none;
     padding: 0;
+    width: 20vw;
 }
+
+
