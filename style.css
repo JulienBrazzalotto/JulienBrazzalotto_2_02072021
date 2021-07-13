@@ -153,7 +153,7 @@ h2 + ul
 {
     display: flex;
     justify-content: space-around;
-    width: 70vw;
+    width: 50vw;
     list-style: none;
     color: #0065FC;
     flex-wrap: wrap;
@@ -294,13 +294,12 @@ article h2, aside h2
     font-weight: bold;
 }
 
-
 /*pop*/
 
 aside
 {
     padding: 1.5vw;
-    flex: 1,2;
+    flex: 1.2;
 }
 
 .titrepop
@@ -323,12 +322,11 @@ aside
     flex-wrap: wrap;
 }
 
-
 .cartepoparriere
 {
     display: flex;
     width: 25vw;
-    height: 11vw;
+    height: 10vw;
     background-color: white;
     padding: 5px;
     border-radius: 20px;
@@ -341,16 +339,16 @@ aside
 .cartepop_img
 {
     width: 10vw;
-    height: 11vw;
+    height: 10vw;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
     object-position: 50% 50%;
-    
 }
 
 .pop
 {
     margin: 0.2vw;
+   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -368,11 +366,15 @@ figure p
 }
 
 
-figcaption, figure h3, figure p
+figure h3, figure p
 {
-    margin-left: 0.8vw;
+    margin-left: 5px;
 }
 
+.star
+{
+    margin-left: 5px;
+}
 
 /*Activités*/
 
@@ -381,13 +383,11 @@ figcaption, figure h3, figure p
     margin: 4vw auto;
 }
 
-
 #paquet
 {
     display: flex;
     justify-content: space-between;
     align-content: space-between;
-    flex-wrap: wrap;
 }
 
 .gr1
@@ -424,8 +424,8 @@ figcaption
     width: 20vw;
     display: flex;
     flex-direction: column;
-    box-shadow: 6px 6px 6px #f2f2f2;
     border-radius: 20px;
+    box-shadow: 6px 6px 6px #f2f2f2;
     text-decoration: none;
     margin-right: 0;
     margin-left: 0;
