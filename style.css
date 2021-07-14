@@ -11,6 +11,12 @@ body
     font-family: 'Raleway', 'Times New Roman', Times, serif;
 }
 
+#bloc_page>*:not(footer)
+{
+    width: 90%;
+    margin:auto;
+}
+
 a{
     text-decoration: none;
     color: #000;
@@ -19,12 +25,6 @@ a{
 h1, h2, h3, strong
 {
     font-weight: bold;
-}
-
-#bloc_page>*:not(footer)
-{
-    width: 90%;
-    margin:auto;
 }
 
 .fa-star
@@ -80,11 +80,17 @@ nav ul li
     color: #0065FC;
 }
 
+.menu
+{
+    padding: 0 20px 0 20px;
+}
+
 .menu:hover
 {
     color: #0065FC;
     border-top: 3px #0065FC solid;
     padding-top: 20px;
+    
 }
 
 /*section recherche*/
@@ -339,7 +345,7 @@ aside
 .cartepop_img
 {
     width: 10vw;
-    height: 10vw;
+    height: auto;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
     object-position: 50% 50%;
@@ -385,31 +391,29 @@ figure h3, figure p
 
 #paquet
 {
+    height: 40vw;
     display: flex;
     justify-content: space-between;
     align-content: space-between;
 }
 
-.gr1
+.general
 {
     display: flex;
     flex-direction: column;
 }
+
 
 .gr2
 {
-    display: flex;
-    flex-direction: column;
+    height: 64.2%;
+    
 }
 
-.gr3
-{
-    display: flex;
-}
 .gr4
 {
-    display: flex;
-    flex-direction: column;
+    height: 52.8%;
+    
 }
 
 figcaption
@@ -422,6 +426,7 @@ figcaption
 .carte_activites
 {
     width: 20vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -434,7 +439,7 @@ figcaption
 .phgrande
 {
     width: 20vw;
-    height: 35vw;
+    height: 37vw;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -469,6 +474,7 @@ footer
 {
     background-color: #F2F2F2;
     padding: 1vw 5vw;
+    margin-top: 3vw;
     display: flex;
     justify-content: space-between;
 }
@@ -487,4 +493,7 @@ footer ul
     width: 20vw;
 }
 
-
+footer ul li :hover
+{
+    color: #0065FC;
+}
