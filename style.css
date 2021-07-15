@@ -148,6 +148,11 @@ h1 + p
     border-radius: 0 15px 15px 0;
 }
 
+.iconesearch
+{
+    display: none;
+}
+
 /*section filtre*/
 
 .filtre
@@ -276,7 +281,7 @@ article h2, aside h2
 
 .carte_arriere
 {
-    width: 15vw;
+    width: 17vw;
     margin: 0 0 2vw 0;
     border: 1px white solid;
     background-color: white;
@@ -288,7 +293,7 @@ article h2, aside h2
 
 .carte_img
 {
-    width: 15vw;
+    width: 17vw;
     height: 7vw;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
@@ -526,6 +531,7 @@ footer ul li :hover
         font-size: 1rem;
     }
 
+
     .recherche, .info
     {
         font-size: 0.6rem;
@@ -564,8 +570,6 @@ footer ul li :hover
     {
         margin-top: 30px;
     }
-
-    
 
     .filtreli
     {
@@ -645,6 +649,154 @@ footer ul li :hover
     footer>*:not(h2)
     {
         font-size: 0.68rem;
+    }
+    
+}
+
+
+
+@media screen and (max-width:768px)
+{
+    
+    #bloc_page
+    {
+        width: 100%;
+    }
+    
+
+    header
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    nav
+    {
+        width: 100%;
+    }
+
+    h2
+    {
+        font-size: 1.2rem;
+    }
+
+    header, #activites, .article_hebergement, .recherche, .filtre, .info, aside
+    {
+        padding: 0 20px 0 20px;
+    }
+
+    .ville
+    {
+        width: 50vw;
+    }
+
+    .bouton_rechercher
+    {        
+        display: none;
+    }
+
+    .iconesearch
+    {
+        display: unset;
+        background-color: #0065FC;
+        padding: 15px;
+        color: white;
+        border: 3px #0065fc solid;
+        border-radius: 15px;
+    }
+
+    .filtre
+    {
+        height: auto;
+        width: 60%;
+    }
+
+
+    .filtre ul
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-content: space-between;
+    }
+
+    .filtreli
+    {
+        margin: 5px 5px 5px 0;
+    }
+
+    .info p
+    {
+        font-size: 1.1rem;
+        width: 60%;
+    }
+
+    .section_hebergements
+    {
+        margin: 0;
+    }
+
+    .titrepop
+    {
+        padding-right: 40px;
+    }
+
+    aside
+    {
+        width: 90%;
+        border-radius: 0;
+    }
+
+    .hebergements_pop, .hebergements, footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartepoparriere
+    {
+        width: 85vw;
+        margin-bottom: 15px;
+    }
+
+    .cartepop_img
+    {
+        width: 30vw;
+    }
+
+    .pop
+    {
+        font-size: 1rem;
+    }
+
+    .article_hebergement
+    {
+        width: 90%;
+        background-color: white;
+    }
+
+    .carte_arriere
+    {
+        font-size: 1rem;
+        width: 85vw;
+        height: 230px;
+    }
+
+    .carte_img
+    {
+        width: 85vw;
+        height: 150px;
+    }
+
+    #paquet
+    {
+        width: 90%;
+    }
+
+    .footerbloc, .listefooter
+    {
+        width: 80vw;
     }
     
 }
