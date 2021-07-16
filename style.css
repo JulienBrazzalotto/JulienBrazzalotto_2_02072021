@@ -7,14 +7,9 @@
 
 body
 {
-    margin: 0px;
+    width: 100%;
+    margin: 0;
     font-family: 'Raleway', 'Times New Roman', Times, serif;
-}
-
-#bloc_page>*:not(footer)
-{
-    width: 90%;
-    margin:auto;
 }
 
 a{
@@ -50,14 +45,12 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.5vw;
-    margin-bottom: 2vw;
-    
+    margin: 1vw 5vw 2vw 5vw;
 }
 
 #logo
 {
-    width: 150px;
+    width: 100px;
 }
 
 nav ul
@@ -101,6 +94,11 @@ nav ul li
 
 /*section recherche*/
 
+.recherche
+{
+    margin: 0 5vw 0 5vw;
+}
+
 h1
 {
     margin-bottom: 0px;
@@ -135,8 +133,9 @@ h1 + p
     color: black;
     font-weight: bold;
     border-right: none;
-    border: 1px #F2F2F2 solid;
+    border: 2px #F2F2F2 solid;
     font-size: 1rem;
+    height: 53px;
 }
 
 .bouton_rechercher
@@ -159,8 +158,7 @@ h1 + p
 {
     display: flex;
     align-items: center;
-    margin: 3vw 0 3vw 0;
-    
+    margin: 3vw 5vw 3vw 5vw;
 }
 
 h2 + ul
@@ -201,7 +199,7 @@ h2 + ul
 
 .filtreli
 {
-    border: 3px #DEEBFF solid;
+    border: 3px #F2F2F2 solid;
     border-radius: 200px;
 }
 
@@ -209,7 +207,9 @@ h2 + ul
 {
     cursor: pointer;
     background-color: white;
+    border-color: #F2F2F2;
 }
+
 
 /*info*/
 
@@ -217,8 +217,7 @@ h2 + ul
 {
     display: flex;
     align-items: center;
-    margin-top: 0.8vw;
-    margin-bottom: 1vw;
+    margin: 0.8vw 5vw 1vw 5vw;
 }
 
 .fa-info
@@ -239,16 +238,16 @@ h2 + ul
 
 
 
-/*corps*/
 
+/*corps*/
 
 .section_hebergements
 {
     display: flex;
-    margin: auto;
+    margin: 0 5vw 0 5vw;
 }
 
-.article_hebergement, aside
+.article_hebergement, .section_populaire
 {
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -261,12 +260,12 @@ h2 + ul
     flex: 3;
 }
 
-aside
+.section_populaire
 {
     flex: 1.2;
 }
 
-article h2, aside h2
+article h2, .section_hebergements h2
 {
     margin-bottom: 2vw;
 }
@@ -310,11 +309,13 @@ article h2, aside h2
 
 /*pop*/
 
-aside
+.section_populaire
 {
-    padding: 1.5vw;
+    padding: 1.5vw 1.5vw 0 1.5vw;
     flex: 1.2;
 }
+
+
 
 .titrepop
 {
@@ -325,6 +326,8 @@ aside
 
 .fa-chart-line
 {
+    position: absolute;
+    right: 6.5vw;
     font-size: 1.5rem;
 }
 
@@ -334,6 +337,7 @@ aside
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .cartepoparriere
@@ -394,7 +398,7 @@ figure h3, figure p
 
 #activites
 {
-    margin: 20px auto;
+    margin: 0 5vw 0 5vw;
 }
 
 #paquet
@@ -520,11 +524,6 @@ footer ul li :hover
         transform: scale(1.05);
     }
 
-    header
-    {
-        width: 150vw;
-        margin: 0;
-    }
 
     nav ul li
     {
@@ -552,7 +551,7 @@ footer ul li :hover
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        height: 16vw;
+        height: 80px;
         padding-top: 1vw;
     }
 
@@ -568,6 +567,7 @@ footer ul li :hover
 
     .info
     {
+        font-size: 1.1rem;
         margin-top: 30px;
     }
 
@@ -593,10 +593,11 @@ footer ul li :hover
         flex-direction: row;
     }
 
-    aside
+    .section_populaire
     {
         margin-bottom: 2vw;
-        width: 96.5%;
+        padding-bottom: 2vw;
+        border-radius: 20px;
     }
 
     .pop
@@ -641,12 +642,12 @@ footer ul li :hover
         margin-top: 5vw;
     }
 
-    footer h2
+    footer h3
     {
         font-size: 1.17rem;
     }
 
-    footer>*:not(h2)
+    footer>*:not(h3)
     {
         font-size: 0.68rem;
     }
@@ -658,23 +659,54 @@ footer ul li :hover
 @media screen and (max-width:768px)
 {
     
-    #bloc_page
-    {
-        width: 100%;
-    }
-    
-
     header
     {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
+        margin: 0;
+        padding: 0;     
     }
 
     nav
     {
+        display: flex;
+        justify-content: center; 
         width: 100%;
+    }
+
+    nav ul
+    {
+        display: flex;
+        justify-content: center; 
+        width: 100%;
+        padding: 0;
+    }
+
+    .menu
+    {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #logo
+    {
+        padding-left: 20px;
+    }
+
+    #inscrire
+    {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 1.3rem;
+    }
+    
+    h1, h1 + p
+    {
+        font-size: 1.05rem;
+        margin-bottom: 10px;
     }
 
     h2
@@ -682,14 +714,16 @@ footer ul li :hover
         font-size: 1.2rem;
     }
 
-    header, #activites, .article_hebergement, .recherche, .filtre, .info, aside
+    .article_hebergement, .recherche, .filtre, .info, .section_populaire
     {
-        padding: 0 20px 0 20px;
+        padding: 0 10px 0 10px;
     }
 
     .ville
     {
-        width: 50vw;
+        border-right: none;
+        width: 100%;
+        font-size: 0.6rem;
     }
 
     .bouton_rechercher
@@ -701,10 +735,20 @@ footer ul li :hover
     {
         display: unset;
         background-color: #0065FC;
-        padding: 15px;
+        padding: 18px;
         color: white;
-        border: 3px #0065fc solid;
+        border: 2px #0065fc solid;
         border-radius: 15px;
+    }
+
+    .bloc_recherche
+    {
+        display: flex;
+        align-items: center;
+        border: 2px #F2F2F2 solid;
+        border-radius: 20px 15px 15px 20px;
+        width: 80%;
+        height: 50px;
     }
 
     .filtre
@@ -726,10 +770,9 @@ footer ul li :hover
         margin: 5px 5px 5px 0;
     }
 
-    .info p
+    .info
     {
-        font-size: 1.1rem;
-        width: 60%;
+        font-size: 1rem;
     }
 
     .section_hebergements
@@ -742,9 +785,8 @@ footer ul li :hover
         padding-right: 40px;
     }
 
-    aside
+    .section_populaire
     {
-        width: 90%;
         border-radius: 0;
     }
 
@@ -756,7 +798,7 @@ footer ul li :hover
 
     .cartepoparriere
     {
-        width: 85vw;
+        width: 95%;
         margin-bottom: 15px;
     }
 
@@ -772,26 +814,26 @@ footer ul li :hover
 
     .article_hebergement
     {
-        width: 90%;
+        width: 95%;
         background-color: white;
     }
 
     .carte_arriere
     {
         font-size: 1rem;
-        width: 85vw;
+        width: 95%;
         height: 230px;
     }
 
     .carte_img
     {
-        width: 85vw;
+        width: 95%;
         height: 150px;
     }
 
-    #paquet
+    footer h3
     {
-        width: 90%;
+        font-size: 1rem;
     }
 
     .footerbloc, .listefooter
