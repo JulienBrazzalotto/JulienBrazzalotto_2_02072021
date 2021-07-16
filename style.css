@@ -894,8 +894,9 @@ footer ul li :hover
     }
 
     .carte_activites
+    {
     margin-bottom: 0;
-
+    }
     footer h3
     {
         font-size: 1rem;
