@@ -210,7 +210,6 @@ h2 + ul
     border-color: #F2F2F2;
 }
 
-
 /*info*/
 
 .info
@@ -235,9 +234,6 @@ h2 + ul
 {
     font-size: 1.2rem;
 }
-
-
-
 
 /*corps*/
 
@@ -313,13 +309,6 @@ article h2, .section_hebergements h2
 {
     padding: 1.5vw 1.5vw 0 1.5vw;
     flex: 1.2;
-}
-
-.titrepop
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
 }
 
 .fa-chart-line
@@ -812,14 +801,10 @@ footer ul li :hover
         margin: 0 0 30px 0;
     }
 
-    .titrepop
-    {
-        padding-right: 40px;
-    }
-
     .section_populaire
     {
         border-radius: 0;
+        padding-left: 0.8em;
     }
 
     .hebergements_pop, .hebergements, footer
@@ -830,7 +815,7 @@ footer ul li :hover
 
     .cartepoparriere
     {
-        width: 97%;
+        width: 98%;
         margin-bottom: 15px;
     }
 
@@ -848,12 +833,13 @@ footer ul li :hover
     {
         width: 96%;
         background-color: white;
+        padding: 0 0 0 0.5em;
     }
 
     .carte_arriere
     {
         font-size: 1rem;
-        width: 97%;
+        width: 96%;
         height: 230px;
     }
 
@@ -870,7 +856,7 @@ footer ul li :hover
         display: flex;
         flex-direction: column;
         margin: 0;
-        padding: 10px;
+        padding: 0 0 0 0.8em;
     }
 
 
@@ -883,7 +869,7 @@ footer ul li :hover
 
     .general, .carte_activites, .phgrande, .phmoyenne, .phpetite, .phtrespetite
     {
-        width: 100%;        
+        width: 99%;        
     }    
 
     
@@ -899,13 +885,9 @@ footer ul li :hover
     }
 
     .carte_activites
-<<<<<<< Updated upstream
-    margin-bottom: 0;
-=======
     {
         margin-bottom: 0;
     }
->>>>>>> Stashed changes
 
     footer h3
     {
