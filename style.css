@@ -311,16 +311,6 @@ article h2, .section_hebergements h2
     flex: 1.2;
 }
 
-<<<<<<< HEAD
-=======
-.titrepop
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
->>>>>>> master
 .fa-chart-line
 {
     position: absolute;
@@ -849,11 +839,7 @@ footer ul li :hover
     .carte_arriere
     {
         font-size: 1rem;
-<<<<<<< HEAD
         width: 96%;
-=======
-        width: 97%;
->>>>>>> master
         height: 230px;
     }
 
@@ -883,11 +869,7 @@ footer ul li :hover
 
     .general, .carte_activites, .phgrande, .phmoyenne, .phpetite, .phtrespetite
     {
-<<<<<<< HEAD
         width: 99%;        
-=======
-        width: 100%;        
->>>>>>> master
     }    
 
     
