@@ -33,11 +33,6 @@ h1, h2, h3, strong
     color: #F2F2F2;
 }
 
-.effet_hover:hover
-{
-    transform: scale(1.1);
-}
-
 /*header*/
 
 header
@@ -203,11 +198,11 @@ h2 + ul
     border-radius: 200px;
 }
 
-.filtreli :hover
+.filtreli:hover
 {
     cursor: pointer;
-    background-color: white;
-    border-color: #F2F2F2;
+    background-color: #DEEBFF;
+    border-color: #DEEBFF;
 }
 
 /*info*/
@@ -221,7 +216,7 @@ h2 + ul
 
 .fa-info
 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #0065fc;
     border-radius: 2000px;
     margin-right: 20px;
@@ -278,12 +273,21 @@ article h2, .section_hebergements h2
 {
     width: 17vw;
     margin: 0 0 2vw 0;
-    border: 1px white solid;
     background-color: white;
     padding: 5px 5px 10px 5px;
     border-radius: 20px;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.253);
     font-size: 0.8rem; 
+}
+
+.ajustement
+{
+    margin-bottom: 3rem;
+}
+
+.ajustement2
+{
+   margin-bottom: 10px;
 }
 
 .carte_img
@@ -492,11 +496,6 @@ footer ul
     list-style: none;
     padding: 0;
     width: 20vw;
-}
-
-footer ul li :hover
-{
-    color: #0065FC;
 }
 
 @media screen and (max-width:1280px)
