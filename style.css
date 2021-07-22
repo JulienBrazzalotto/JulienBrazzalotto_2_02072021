@@ -840,6 +840,7 @@ footer ul
         font-size: 1rem;
         width: 96%;
         height: 230px;
+        margin-bottom: 15px;
     }
 
     .carte_img
@@ -857,7 +858,6 @@ footer ul
         margin: 0;
         padding: 0 0 0 0.8em;
     }
-
 
     .paquet
     {
