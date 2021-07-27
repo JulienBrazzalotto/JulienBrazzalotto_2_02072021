@@ -83,7 +83,7 @@ nav ul li
 {
     color: #0065FC;
     border-top: 3px #0065FC solid;
-    padding-top: 20px;
+    padding-top: 19px;
     
 }
 
@@ -507,17 +507,15 @@ footer ul
         font-size: 0.7rem;
     }
 
-    .effet_hover:hover
-    {
-        transform: scale(1.05);
-    }
-
-
     nav ul li
     {
         font-size: 1rem;
     }
 
+    .menu:hover
+    {
+        padding-top: 22px;
+    }
 
     .recherche, .info
     {
@@ -646,12 +644,6 @@ footer ul
 
 @media screen and (max-width:768px)
 {
-    
-    .effet_hover:hover
-    {
-        transform: scale(1.02);
-    }
-
     header
     {
         display: flex;
