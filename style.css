@@ -282,7 +282,7 @@ article h2, .section_hebergements h2
 
 .ajustement
 {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .ajustement2
@@ -735,7 +735,7 @@ footer ul
     {
         border-right: none;
         width: 100%;
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
 
     .bouton_rechercher
@@ -883,6 +883,11 @@ footer ul
     footer h3
     {
         font-size: 1rem;
+    }
+
+    footer li
+    {
+        font-size: 0.9rem;
     }
 
     .footerbloc, .listefooter
